@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 0;
+    overflow: hidden;
+}
+
+.home,
+.menu,
+.about-us,
+.contact {
+    background: linear-gradient(#f8f4f1 70%, #ffffff);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .home,
+    .menu,
+    .about-us,
+    .contact {
+        min-height: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+

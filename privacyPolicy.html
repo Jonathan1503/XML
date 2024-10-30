@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian's Cafe</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="index-header">
+        <div class="logo">Brian's Cafe</div>
+        <div class="nav-options">
+            <a class="nav" href="index.html">Home</a>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    
+        
+
+
+</body>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Bryan’s Café | <a href="#"> Privacy policy </a></p>
+        </div>
+    </footer> 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navOptions = document.querySelector('.nav-options');
+
+        hamburger.addEventListener('click', () => {
+            navOptions.classList.toggle('active'); // Toggle the 'active' class
+        });
+             // Get the current year
+             const currentYear = new Date().getFullYear();
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = currentYear;
+    </script>
+</html>
