@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/privacy.css">
 </head>
 <body>
 
@@ -18,6 +19,7 @@
         <div class="logo">Brian's Cafe</div>
         <div class="nav-options">
             <a class="nav" href="index.html">Home</a>
+        </div>
         <div class="hamburger" id="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -25,26 +27,74 @@
         </div>
     </nav>
     
-        
-
-
-</body>
-
+    <!-- Footer with Privacy Policy and Terms Links -->
     <footer>
         <div class="footer-content">
-            <p>&copy; <span id="current-year"></span> Bryan’s Café | <a href="#"> Privacy policy </a></p>
+            <p>&copy; <span id="current-year"></span> Bryan’s Café | 
+                <a href="#" id="privacy-link">Privacy Policy</a> | 
+            </p>
         </div>
-    </footer> 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navOptions = document.querySelector('.nav-options');
+    </footer>
 
-        hamburger.addEventListener('click', () => {
-            navOptions.classList.toggle('active'); // Toggle the 'active' class
-        });
-             // Get the current year
-             const currentYear = new Date().getFullYear();
-        // Set the current year in the footer
-        document.getElementById('current-year').textContent = currentYear;
-    </script>
+    <!-- Privacy Policy Modal -->
+<div id="privacy">
+    <div class="content">
+        <h2>Privacy Policy</h2>
+        <p>At Brian's Cafe, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines what data we collect, how we use it, and your rights regarding that data.</p>
+        
+        <h3>1. Information We Collect</h3>
+        <p>We may collect the following types of personal information when you interact with our website or visit our cafe:</p>
+        <ul>
+            <li><strong>Contact Information:</strong> Name, email address, and phone number (if provided via contact form).</li>
+            <li><strong>Usage Data:</strong> Details of your interactions on our website, such as pages visited and links clicked, which help us improve our services.</li>
+            <li><strong>Location Information:</strong> Approximate location data based on IP address for user experience improvements.</li>
+        </ul>
+        
+        <h3>2. How We Use Your Information</h3>
+        <p>We use your personal data to:</p>
+        <ul>
+            <li>Respond to your inquiries and provide customer support.</li>
+            <li>Enhance our services and personalize your experience.</li>
+            <li>Communicate promotions, offers, and updates if you have opted in to receive marketing communications.</li>
+        </ul>
+        
+        <h3>3. Data Security</h3>
+        <p>We implement various security measures to protect your personal information. Access to your data is limited to authorized personnel, and we regularly review our data security protocols to maintain data protection standards.</p>
+        
+        <h3>4. Your Rights</h3>
+        <p>You have the right to access, correct, or request the deletion of your personal data. To exercise these rights, please contact us at [contact@brianscafe.com].</p>
+        
+        <h3>5. Updates to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and we encourage you to review this policy periodically.</p>
+    </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div id="terms">
+    <div class="content">
+        <h2>Terms of Service</h2>
+        <p>These Terms of Service ("Terms") govern your use of the Brian's Cafe website. By using our website, you agree to comply with these Terms.</p>
+        
+        <h3>1. Website Use</h3>
+        <p>This website is provided to offer information about Brian's Cafe, including menu offerings, location details, and contact information. Any unauthorized use of this website, including unauthorized access or modifications to its content, is prohibited.</p>
+        
+        <h3>2. Content Accuracy</h3>
+        <p>While we strive to ensure that the information on our website is accurate, we do not guarantee its completeness or accuracy. Any reliance on the information provided is at your own risk.</p>
+        
+        <h3>3. User Responsibilities</h3>
+        <p>By using our website, you agree not to engage in activities that may disrupt or interfere with our services. This includes submitting false information, unauthorized attempts to access our data, or using the site in a manner that violates applicable laws.</p>
+        
+        <h3>4. Limitation of Liability</h3>
+        <p>Brian's Cafe is not liable for any damages that may arise from the use or inability to use our website, including errors, interruptions, or loss of data.</p>
+        
+        <h3>5. Governing Law</h3>
+        <p>These Terms are governed by the laws of the state where Brian's Cafe is located, and any disputes will be resolved under the jurisdiction of local courts.</p>
+        
+        <h3>6. Updates to Terms</h3>
+        <p>We may revise these Terms of Service periodically, and the latest version will be available on this page. Continued use of our website indicates your acceptance of any updates.</p>
+    </div>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
