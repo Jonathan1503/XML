@@ -47,18 +47,21 @@
 }
 
 /* Button Styling */
-.home-container button {
+.home-container a {
     margin: 30px auto; /* Center button */
     width: 200px;
     height: 50px;
+    padding-top: 12px;
+    text-align: center;
     background: none;
     border: 2px solid white;
     color: white;
+    text-decoration-line: none  ;
     font-size: 15px; /* Corrected font size */
     display: block; /* Ensure button behaves as block */
 }
 
-.home-container button:hover {
+.home-container a:hover {
     cursor: pointer;
 }
 
